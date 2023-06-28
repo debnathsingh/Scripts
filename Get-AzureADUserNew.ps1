@@ -89,6 +89,7 @@ function Get-AzureADUserNew{
             # Make API requests using $accessToken and $headers
             # For example:
             $response = Invoke-RestMethod -Uri $requestUrl -Headers $headers -Method Get
+            $users = $null
             # Process the response
             $users = $response.value
 
